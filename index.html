@@ -78,6 +78,28 @@
     </div>
     <script id="256-script-bundle" src="scripts/js/app.js">
     </script>
+
+<script>
+    console.log("in here!!!");
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () { myFunction() };
+
+    var header;
+    var sticky;
+
+    function myFunction() {
+        // Get the header
+        header = document.getElementById("main-menu-container");
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        sticky = header.offsetTop;
+
+        if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        } else {
+        header.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 
 </html>
