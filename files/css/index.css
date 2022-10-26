@@ -109,3 +109,11 @@ main hr {
     background-color: #eee;
     height: 1px;
 }
+
+#heroImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 800px;
+}
